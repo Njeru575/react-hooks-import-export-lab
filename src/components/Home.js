@@ -1,11 +1,12 @@
 import React from "react";
-
-function Home() {
+import { username, city } from "../data/user";  
+const Home = () => {
   return (
-    <div id="home">
-      <h1>
-        {username} is a Web Developer from {city}
-      </h1>
+    <div>
+      <h2>Welcome to the Portfolio of {username}</h2>
+      <p>City: {city}</p>
     </div>
   );
-}
+};
+
+export default Home; 
